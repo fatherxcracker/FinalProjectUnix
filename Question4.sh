@@ -7,6 +7,7 @@ select option in "Show all running services" "Start a service" "Stop a service" 
             echo "Currently Running Services:"
             systemctl list-units --type=service --state=running
             echo
+            read -p "Press Enter to return to the menu..."
             ;;
 
         2)
