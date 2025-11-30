@@ -29,7 +29,7 @@ select option in "Show all running services" "Start a service" "Stop a service" 
 
         4)
             echo "You have exited the application."
-            break
+            exit 0
             ;;
 
         *)
