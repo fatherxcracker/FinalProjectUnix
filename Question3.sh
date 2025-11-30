@@ -44,7 +44,7 @@ select option in "Show all Network Interfaces" "Enable a Network Interface" "Dis
 
 		   sudo ip addr flush dev "$iface"
                    sudo ip addr add "$ipaddr" dev "$iface"
-                   sudo ip link set "$iface": up
+                   sudo ip link set "$iface" up
                    echo "Assigned IP $ipaddr to interface $iface"
 		   echo
 		   read -p "Press Enter to return to the menu..."
