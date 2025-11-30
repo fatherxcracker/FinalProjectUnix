@@ -1,4 +1,5 @@
 echo "Service Management"
+echo
 select option in "Show all running services" "Start a service" "Stop a service" "Exit"; do
     case $REPLY in
 
