@@ -26,7 +26,7 @@ echo "=== All System Processes ==="
 echo "=== Terminate a Process ==="
 read -p "Enter the PID of the process to terminate: " pid
 ps aux | grep "$pid"
-kill "$pid"
+sudo kill "$pid"
 }
 
 backup_management(){
