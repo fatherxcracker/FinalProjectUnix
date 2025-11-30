@@ -17,7 +17,7 @@ select option in "Show all running services" "Start a service" "Stop a service" 
             read servicename
             sudo systemctl start "$servicename"
             echo "Service '$servicename' started"
-            read -o "Press Enter to return to the menu..."
+            read -p "Press Enter to return to the menu..."
             echo
             ;;
 
