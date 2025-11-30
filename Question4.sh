@@ -9,6 +9,7 @@ select option in "Show all running services" "Start a service" "Stop a service" 
             systemctl --no-pager list-units --type=service --state=running
             echo
             read -p "Press Enter to return to the menu..."
+            echo
             ;;
 
         2)
@@ -16,6 +17,7 @@ select option in "Show all running services" "Start a service" "Stop a service" 
             read servicename
             sudo systemctl start "$servicename"
             echo "Service '$servicename' started"
+            read -o "Press Enter to return to the menu..."
             echo
             ;;
 
@@ -24,6 +26,7 @@ select option in "Show all running services" "Start a service" "Stop a service" 
             read servicename
             sudo systemctl stop "$servicename"
             echo "Service '$servicename' stopped"
+            read -p "Press Enter to return to the menu..."
             echo
             ;;
 
