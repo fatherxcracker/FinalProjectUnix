@@ -50,7 +50,7 @@ minute=$(echo "$time" | cut -d":" -f2)
 hour=$(echo "$time" | cut -d":" -f1)
 cron_tab="$minute $hour * * $day cp $file $dest"
 (crontab -l  2>/dev/null; echo "$cron_tab") | crontab -
-echo "File backup schedule created succesfully!"
+echo "File backup schedule created successfully!"
 }
 
 create_user(){
